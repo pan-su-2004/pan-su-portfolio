@@ -149,7 +149,7 @@ function CaseStudy() {
         <div className="container-editorial">
           <div className="overflow-hidden rounded-2xl border border-border bg-surface aspect-[16/9]">
             <img
-              src={project.image}
+              src={project.imageWireframe}
               alt={`${project.title} process`}
               className="h-full w-full object-cover"
             />
@@ -174,6 +174,16 @@ function CaseStudy() {
         <Section eyebrow="Solution" title="The final solution.">
           <p>{project.solution}</p>
         </Section>
+
+        <div className="container-editorial">
+          <div className="overflow-hidden rounded-2xl border border-border bg-surface aspect-[16/9]">
+            <img
+              src={project.imageSolution}
+              alt={`${project.title} process`}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
 
         <section className="container-editorial py-16 md:py-24">
           <p className="eyebrow text-center">Outcomes</p>

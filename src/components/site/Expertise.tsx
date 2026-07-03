@@ -37,8 +37,8 @@ export function Expertise() {
           <h2 className="serif text-4xl md:text-5xl mt-3">A practice across five disciplines.</h2>
         </div>
         <p className="text-base text-muted-foreground md:text-lg max-w-xl md:justify-self-end">
-          I move between research, product UI, brand and systems — keeping craft and clarity
-          consistent across every surface.
+          I combine product thinking, user experience, interface design, and visual communication to
+          build digital products that are intuitive, scalable, and enjoyable to use.
         </p>
       </div>
 

@@ -1,6 +1,12 @@
 import maretindaImg from "@/assets/project-maretinda.jpg";
+import maretindaImgWireframe from "@/assets/project-maretinda-wireframe.jpg";
+import maretindaImgSolution from "@/assets/project-maretinda-wireframe-solution.jpg";
 import moneyImg from "@/assets/project-money.jpg";
+import moneyImgWireframe from "@/assets/project-money-wireframe.jpg";
+import moneyImgSolution from "@/assets/project-money-solution.jpg";
 import giyapayImg from "@/assets/project-giyapay.jpg";
+import giyapayImgWireframe from "@/assets/project-giyapay-wireframe.jpg";
+import giyapayImgSolution from "@/assets/project-giyapay-solution.jpg";
 
 export type Project = {
   slug: string;
@@ -11,6 +17,8 @@ export type Project = {
   year: string;
   summary: string;
   image: string;
+  imageWireframe: string;
+  imageSolution: string;
   overview: string;
   problem: string;
   goals: string[];
@@ -27,44 +35,54 @@ export const projects: Project[] = [
   {
     slug: "maretinda",
     index: "01",
-    title: "Maretinda E-Commerce Website",
-    category: "E-Commerce · Web Design",
+    title: "Maretinda",
+    category: "Figma, FigJam, Canva",
     role: "UI/UX Designer",
-    year: "2025",
+    year: "8 Weeks",
     summary:
-      "Designed a modern e-commerce experience focused on usability, product discovery and conversion.",
+      "Designed a responsive multi-vendor marketplace that provides a seamless shopping experience for buyers while enabling sellers to efficiently manage their online stores.",
     image: maretindaImg,
+    imageWireframe: maretindaImgWireframe,
+    imageSolution: maretindaImgSolution,
+
     overview:
-      "Maretinda is an emerging lifestyle brand selling curated apparel and accessories. The team needed a digital storefront that communicated the brand's editorial identity while making products easy to browse, compare and purchase across devices.",
+      "Maretinda is a multi-vendor e-commerce marketplace designed for the Philippine market, connecting buyers and sellers on one platform. It enables sellers to create storefronts, manage products, process orders, and receive payments, while providing shoppers with a secure and seamless purchasing experience. As the UI/UX Designer, I designed responsive user interfaces across both the buyer and seller journeys, collaborating closely with developers and stakeholders to create intuitive, scalable, and developer-friendly designs.",
+
     problem:
-      "The legacy site buried products under heavy banners, lacked clear filtering and made checkout feel transactional rather than considered. Conversion suffered most on mobile, where information density and tap targets were misaligned.",
+      "Designing a marketplace requires balancing the needs of two different user groups: buyers and sellers. Buyers expect a fast and trustworthy shopping experience, while sellers need efficient tools to manage their stores, products, and orders. The challenge was to create a consistent experience across multiple user flows while ensuring the designs were practical for development and adaptable to dynamic content.",
+
     goals: [
-      "Reduce time-to-product on the homepage",
-      "Make filtering feel native to mobile, not a desktop port",
-      "Treat product photography as the brand voice",
-      "Streamline cart and checkout to three intentional steps",
+      "Design an intuitive shopping experience for buyers.",
+      "Simplify the onboarding process for new sellers.",
+      "Create reusable UI components for consistency and faster development.",
+      "Support responsive layouts across desktop devices.",
+      "Build scalable designs that accommodate dynamic content and future platform growth.",
     ],
+
     research:
-      "I audited five competitors, ran six unmoderated usability sessions on the existing site, and mapped the full purchase journey from discovery to post-purchase. Heatmaps showed users scrolling past the hero in under two seconds — products needed to surface immediately.",
+      "Before designing, I researched leading e-commerce platforms such as Shopee, Lazada, Shopify, Etsy, and Amazon to understand common marketplace patterns, user onboarding experiences, checkout flows, and product browsing behavior. I also collaborated with developers and stakeholders throughout the project to understand technical constraints and business goals.",
+
     process:
-      "I moved from low-fidelity sitemap and user flows to greyscale wireframes, then layered visual design on top in close collaboration with the brand designer. Every screen was prototyped in Figma and tested with five users before development handoff.",
+      "To maintain consistency across the marketplace, I built a reusable design system that included color styles, typography, buttons, product cards, navigation components, email templates, icons, a logo, and reusable UI components. The component-based approach improved design consistency and simplified developer handoff.",
+
     wireframes:
-      "Wireframes prioritised a flexible editorial grid, persistent filters and a simplified product page hierarchy. The cart was reimagined as a slide-over rather than a separate route to keep shopping momentum intact.",
+      "Low-fidelity wireframes were created to organize complex user flows before visual design. These included product features, utility pages, user account systems, shopping experiences, checkout processes, blog pages, and a seller guide. This stage helped validate layouts, prioritize information, and identify usability improvements early in the design process.",
+
     decisions: [
-      "Editorial grid with mixed-aspect product tiles to break catalog monotony",
-      "Sticky filter rail on desktop, full-screen sheet on mobile",
-      "Inline size guidance to reduce returns",
-      "Three-step checkout with persistent cart summary",
+      "Designed a clear and intuitive shopping experience from product discovery to checkout.",
+      "Product filters for faster product discovery.",
+      "Clear product cards for better browsing.",
+      "Organized product details for easier decision-making.",
+      "Seller profile section to improve trust and product exploration.",
     ],
+
     solution:
-      "The launched site leads with curated collections, surfaces products within the first viewport on every device, and replaces a four-step checkout with a focused three-step flow. Typography and pacing reflect the brand's editorial voice without slowing the path to purchase.",
-    results: [
-      "+38% increase in mobile add-to-cart rate",
-      "-22% reduction in checkout abandonment",
-      "Average session duration up by 1m 12s",
-    ],
+      "A responsive marketplace experience was designed to help users easily discover products, browse categories, complete secure purchases, and manage their orders. The interface was built with a consistent design system and reusable components to provide a seamless and intuitive shopping experience.",
+
+    results: ["Easy Product Discovery", "Consistent User Experience", "Seamless Shopping Journey"],
+
     reflection:
-      "The biggest unlock wasn't a single screen — it was treating the entire purchase journey as one continuous narrative. Working closely with developers from week one meant motion, spacing and states shipped as designed.",
+      "Working on Maretinda strengthened my ability to design for real-world product development rather than isolated screens. I learned the importance of collaborating closely with developers, adapting designs based on technical constraints, and considering edge cases that arise during implementation. The iterative feedback process helped me create interfaces that are not only visually consistent but also practical, scalable, and ready for development.",
   },
   {
     slug: "money-tracker",
@@ -76,7 +94,8 @@ export const projects: Project[] = [
     summary:
       "Designed a mobile finance application that helps users track income, expenses, and achieve budgeting goals through a simple and intuitive experience.",
     image: moneyImg,
-
+    imageWireframe: moneyImgWireframe,
+    imageSolution: moneyImgSolution,
     overview:
       "Money Tracker is a mobile application designed to help users manage their finances by tracking income and expenses, setting financial goals, and analyzing spending habits. The goal was to create a simple and intuitive experience that helps users stay financially organized without feeling overwhelmed.",
 
@@ -122,44 +141,57 @@ export const projects: Project[] = [
   {
     slug: "giyapay",
     index: "03",
-    title: "Giyapay Merchant Dashboard",
-    category: "SaaS · Dashboard",
+    title: "GiyaPay Dashboard",
+    category: "Figma, Canva",
     role: "UI/UX Designer",
-    year: "2024",
+    year: "2 Weeks",
     summary:
-      "Designed a dashboard experience that simplifies merchant operations, monitoring and business insights.",
+      "Redesigned a merchant dashboard for a digital payment platform, improving usability, navigation, and visual consistency while creating a scalable interface for merchants and administrators.",
     image: giyapayImg,
+    imageWireframe: giyapayImgWireframe,
+    imageSolution: giyapayImgSolution,
+
     overview:
-      "Giyapay is a payment processing platform serving small and mid-size merchants across Southeast Asia. The merchant dashboard had grown organically, and operators struggled to find the data they needed during a working day.",
+      "GiyaPay is a digital payment platform that enables merchants in the Philippines to accept digital payments, monitor transactions, generate reports, and manage their business through a centralized merchant dashboard. As the UI/UX Designer, I was responsible for redesigning the merchant dashboard to improve usability, modernize the interface, and create a more organized experience for merchants. I worked closely with stakeholders and developers, iterating on the design based on business requirements and internal feedback.",
+
     problem:
-      "The legacy dashboard buried critical actions behind multiple clicks, mixed monitoring with configuration, and offered no clear answer to the merchant's first question every morning: did anything break overnight?",
+      "The existing merchant dashboard had an outdated interface, inconsistent layouts, and navigation that made it difficult for merchants to quickly access important information. Some features were hidden within dropdown menus, several pages lacked visual hierarchy, and the overall experience did not reflect a modern payment platform. The challenge was to redesign the dashboard while maintaining existing functionality and introducing a cleaner, more scalable interface that supports both regular merchants and administrators.",
+
     goals: [
-      "Surface daily health in a single glance",
-      "Separate operational tasks from configuration",
-      "Make complex transaction data scannable",
-      "Establish a scalable design system for future modules",
+      "Improve the overall user experience of the merchant dashboard.",
+      "Create a cleaner and more modern interface.",
+      "Simplify navigation and information hierarchy.",
+      "Make frequently used features easier to access.",
+      "Design reusable and consistent UI components.",
     ],
+
     research:
-      "I shadowed three merchants for a full working day, interviewed their support teams, and mapped every entry point into the dashboard. Most sessions started with the same question — was yesterday OK? — but the answer required five screens.",
+      "Since most payment providers do not publicly expose their merchant dashboards, I researched modern dashboard patterns from SaaS platforms, fintech products, banking applications, and analytics systems to understand common layouts, navigation structures, dashboard widgets, data visualization, and reporting interfaces. Throughout the project, I also collaborated with stakeholders to gather requirements and continuously refined the design based on their feedback, ensuring that the proposed solutions aligned with both business goals and merchant needs.",
+
     process:
-      "From journey mapping I defined an Operations / Insights / Settings split, then built a component library to keep new modules consistent. Design reviews ran twice weekly with engineering during build.",
+      "To create a more cohesive experience, I established a consistent design language using reusable components, typography, color styles, buttons, form controls, tables, cards, navigation elements, and modal layouts. This helped improve consistency across pages while making future updates easier for both designers and developers.",
+
     wireframes:
-      "Wireframes restructured the IA around tasks, not features. The home screen became a true status surface, with deep dives one click away.",
+      "Before creating the final interface, I explored multiple layouts for the dashboard, transactions, reports, integration, and navigation. This process helped organize information, determine feature priorities, and refine user flows before moving into high-fidelity designs.",
+
     decisions: [
-      "Status-first home with health summary above the fold",
-      "Dense, scannable tables with progressive disclosure",
-      "Component library covering 40+ patterns",
-      "Clear hierarchy between monitoring and configuration",
+      "Redesigned the dashboard with summary widgets for daily, weekly, and monthly sales.",
+      "Improved the transaction management experience by introducing cleaner filtering and table layouts.",
+      "Added support for merchant filtering for administrator accounts managing multiple merchants.",
+      "Reorganized navigation by moving frequently accessed features into the main sidebar.",
     ],
+
     solution:
-      "The new dashboard answers the merchant's first question instantly, lets support teams jump from alert to transaction in two clicks, and ships with a documented design system used by three engineering squads.",
+      "The redesigned merchant dashboard provides merchants with a modern and organized workspace for managing payments, monitoring business performance, reviewing transactions, generating reports, and accessing developer tools. The interface emphasizes clarity, efficient navigation, and consistent visual patterns while supporting future product growth.",
+
     results: [
-      "Time-to-insight reduced by 64% in user testing",
-      "Support tickets about navigation dropped by 41%",
-      "Design system adopted by 3 squads",
+      "Cleaner and more professional dashboard interface.",
+      "Improved navigation and information hierarchy.",
+      "Better visibility of business insights through dashboard widgets.",
     ],
+
     reflection:
-      "Dashboards live or die by hierarchy. Slowing down to argue about what truly matters on the home screen paid off for every screen that followed.",
+      "This project strengthened my ability to redesign an existing product while balancing stakeholder feedback, business objectives, and usability. I learned the importance of designing scalable interfaces that can evolve as new features are introduced while maintaining consistency and simplicity across the overall user experience. Working closely with stakeholders also reinforced the value of iterative design and clear communication throughout the design process.",
   },
 ];
 

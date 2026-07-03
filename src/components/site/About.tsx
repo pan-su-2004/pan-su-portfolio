@@ -35,17 +35,18 @@ export function About() {
               both human and considered.
             </p>
             <p>
-              I collaborate remotely with developers and product teams, turning research and brand
-              into interfaces that ship. My Computer Science studies keep me fluent in the language
-              of the people I build with.
+              My approach to design starts with understanding people before pixels. I enjoy solving
+              real problems through thoughtful user experiences, structured systems, and
+              collaborative product design. Whether designing a website or mobile app, I focus on
+              creating interfaces that are intuitive, accessible, and aligned with business goals.
             </p>
           </div>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-8 max-w-xl">
             {[
-              ["Based", "Myanmar"],
-              ["Working", "Remotely"],
-              ["Studies", "CS · IT"],
+              ["Experience", "2+ Years"],
+              ["Collaboration", "Remote Teams"],
+              ["Availability", "Open Worldwide"],
             ].map(([k, v]) => (
               <div key={k}>
                 <div className="text-xs uppercase tracking-[0.22em] text-muted-foreground">{k}</div>

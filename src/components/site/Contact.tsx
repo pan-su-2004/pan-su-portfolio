@@ -78,10 +78,12 @@ export function Contact() {
               transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             >
               <h2 className="serif text-3xl md:text-4xl lg:text-5xl leading-[1.05]">
-                Let&apos;s create <em className="not-italic opacity-80">meaningful</em> digital experiences together.
+                Let&apos;s create <em className="not-italic opacity-80">meaningful</em> digital
+                experiences together.
               </h2>
               <p className="mt-4 text-sm md:text-base opacity-80 max-w-md leading-relaxed">
-                Open to collaborations, freelance projects, and full-time opportunities. Let&apos;s connect and build something remarkable.
+                Open to collaborations, freelance projects, and full-time opportunities. Let&apos;s
+                connect and build something remarkable.
               </p>
 
               <div className="mt-8 space-y-5">
@@ -91,18 +93,20 @@ export function Contact() {
                     href="mailto:hello@pansunadi.design"
                     className="serif text-xl md:text-2xl border-b border-[var(--cream)]/30 hover:border-[var(--cream)] transition-colors"
                   >
-                    hello@pansunadi.design
+                    pansu2970@gmail.com
                   </a>
                 </div>
                 <div className="flex flex-wrap gap-5">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/pan-su"
+                    target="_blank"
                     className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-80 transition-opacity"
                   >
                     <Linkedin size={16} /> LinkedIn <ArrowUpRight size={14} />
                   </a>
                   <a
-                    href="#"
+                    href="https://drive.google.com/file/d/1ovgSElzF_dl1jUXXEv7gO_IgWq6QMVDl/view?usp=sharing"
+                    target="_blank"
                     className="inline-flex items-center gap-2 text-sm font-medium hover:opacity-80 transition-opacity"
                   >
                     <FileText size={16} /> Resume <ArrowUpRight size={14} />
@@ -150,7 +154,10 @@ export function Contact() {
                     className="space-y-5"
                   >
                     <div className="space-y-1.5">
-                      <label htmlFor="name" className="text-[10px] uppercase tracking-[0.25em] opacity-70">
+                      <label
+                        htmlFor="name"
+                        className="text-[10px] uppercase tracking-[0.25em] opacity-70"
+                      >
                         Name
                       </label>
                       <Input
@@ -159,12 +166,13 @@ export function Contact() {
                         placeholder="Your name"
                         className={`rounded-xl border-[var(--cream)]/20 bg-[var(--cream)]/10 text-primary-foreground placeholder:text-[var(--cream)]/40 focus-visible:ring-[var(--cream)]/40 h-11 ${errors.name ? "border-red-400/60 focus-visible:ring-red-400/40" : ""}`}
                       />
-                      {errors.name && (
-                        <p className="text-xs text-red-300 mt-1">{errors.name}</p>
-                      )}
+                      {errors.name && <p className="text-xs text-red-300 mt-1">{errors.name}</p>}
                     </div>
                     <div className="space-y-1.5">
-                      <label htmlFor="email" className="text-[10px] uppercase tracking-[0.25em] opacity-70">
+                      <label
+                        htmlFor="email"
+                        className="text-[10px] uppercase tracking-[0.25em] opacity-70"
+                      >
                         Email
                       </label>
                       <Input
@@ -174,12 +182,13 @@ export function Contact() {
                         placeholder="your@email.com"
                         className={`rounded-xl border-[var(--cream)]/20 bg-[var(--cream)]/10 text-primary-foreground placeholder:text-[var(--cream)]/40 focus-visible:ring-[var(--cream)]/40 h-11 ${errors.email ? "border-red-400/60 focus-visible:ring-red-400/40" : ""}`}
                       />
-                      {errors.email && (
-                        <p className="text-xs text-red-300 mt-1">{errors.email}</p>
-                      )}
+                      {errors.email && <p className="text-xs text-red-300 mt-1">{errors.email}</p>}
                     </div>
                     <div className="space-y-1.5">
-                      <label htmlFor="message" className="text-[10px] uppercase tracking-[0.25em] opacity-70">
+                      <label
+                        htmlFor="message"
+                        className="text-[10px] uppercase tracking-[0.25em] opacity-70"
+                      >
                         Message
                       </label>
                       <Textarea

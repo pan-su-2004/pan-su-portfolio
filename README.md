@@ -45,17 +45,20 @@ https://portfolio-pan-su.vercel.app/
 ---
 
 ## 📂 Project Structure
+
+```
 src
-├── assets # Images and static assets
+├── assets              # Images and static assets
 ├── components
-│ ├── site # Portfolio-specific components
-│ └── ui # Reusable UI components
-├── hooks # Custom React hooks
-├── lib # Utility functions and project data
-├── routes # Application routes
-├── router.tsx # Router configuration
-├── start.ts # Application startup configuration
-└── styles.css # Global styles
+│   ├── site            # Portfolio-specific components
+│   └── ui              # Reusable UI components
+├── hooks               # Custom React hooks
+├── lib                 # Utility functions and project data
+├── routes              # Application routes
+├── router.tsx          # Router configuration
+├── start.ts            # Application startup configuration
+└── styles.css          # Global styles
+```
 
 ## 🎨 Design
 

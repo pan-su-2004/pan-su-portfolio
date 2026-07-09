@@ -47,12 +47,18 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           <button
-            onClick={() => { router.invalidate(); reset(); }}
+            onClick={() => {
+              router.invalidate();
+              reset();
+            }}
             className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:bg-[var(--primary-deep)]"
           >
             Try again
           </button>
-          <a href="/" className="rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-accent">
+          <a
+            href="/"
+            className="rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-accent"
+          >
             Go home
           </a>
         </div>
@@ -67,10 +73,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Pan Su Nadi — UI/UX & Graphic Designer" },
-      { name: "description", content: "Portfolio of Pan Su Nadi — UI/UX designer and graphic designer crafting thoughtful digital experiences through research, visual design and collaboration." },
+      {
+        name: "description",
+        content:
+          "Portfolio of Pan Su Nadi — UI/UX designer and graphic designer crafting thoughtful digital experiences through research, visual design and collaboration.",
+      },
+      {
+        property: "og:image",
+        content: "/src/assets/pan-su-nadi-profile.jpg",
+      },
       { name: "author", content: "Pan Su Nadi" },
       { property: "og:title", content: "Pan Su Nadi — UI/UX & Graphic Designer" },
-      { property: "og:description", content: "Thoughtful digital experiences through UX, visual design and collaboration." },
+      {
+        property: "og:description",
+        content: "Thoughtful digital experiences through UX, visual design and collaboration.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -81,6 +98,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap",
+      },
+      {
+        rel: "icon",
+        href: "/portfolio-site-icon.png",
       },
     ],
   }),
@@ -93,8 +114,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 function RootShell({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head><HeadContent /></head>
-      <body>{children}<Scripts /></body>
+      <head>
+        <HeadContent />
+      </head>
+      <body>
+        {children}
+        <Scripts />
+      </body>
     </html>
   );
 }

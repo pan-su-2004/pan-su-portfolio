@@ -16,12 +16,32 @@ type Item = {
 
 // Mixed ratios → a curated editorial mosaic that mirrors real artwork dimensions.
 const items: Item[] = [
-  { img: g1, title: "Lay — Poster Series", tag: "Editorial · Print", ratio: "aspect-[2480/3508]" }, // portrait A4
-  { img: g2, title: "Loggerback Identity", tag: "Brand · Identity", ratio: "aspect-square" }, // 3000x3000
-  { img: g3, title: "Cosmetics Social Set", tag: "Social · Campaign", ratio: "aspect-square" }, // 1500x1500
-  { img: g4, title: "Magazine Editorial Spread", tag: "Editorial · Print", ratio: "aspect-[3508/2480]" }, // landscape
-  { img: g5, title: "Atelier Stationery", tag: "Brand · Identity", ratio: "aspect-square" }, // 2000x2000
-  { img: g6, title: "Bloom Social Suite", tag: "Social · Campaign", ratio: "aspect-[2480/3508]" }, // portrait
+  {
+    img: g1,
+    title: "Tropicana Lemon Juice",
+    tag: "Social Media Campaign",
+    ratio: "aspect-[2480/3508]",
+  }, // portrait A4
+  { img: g2, title: "Fanta", tag: "Social Media Campaign", ratio: "aspect-square" }, // 3000x3000
+  { img: g3, title: "Aquafinat", tag: "Social Media Campaign", ratio: "aspect-square" }, // 1500x1500
+  {
+    img: g4,
+    title: "Crispy Fried Chicken",
+    tag: "Social Media Campaign",
+    ratio: "aspect-[3508/2480]",
+  }, // landscape
+  {
+    img: g5,
+    title: "IELTS Preparation Campaign",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
+  {
+    img: g6,
+    title: "The Great American Ride",
+    tag: "Social Media Campaign",
+    ratio: "aspect-[2480/3508]",
+  }, // portrait
 ];
 
 export function GraphicDesign() {
@@ -37,8 +57,7 @@ export function GraphicDesign() {
             Selected graphic design work.
           </h2>
           <p className="mt-5 text-base md:text-lg text-muted-foreground max-w-xl">
-            A curated selection of branding, marketing, social media, and visual
-            design projects.
+            A curated selection of branding, marketing, social media, and visual design projects.
           </p>
         </div>
 
@@ -60,9 +79,7 @@ export function GraphicDesign() {
               </div>
               <div className="pointer-events-none absolute inset-0 bg-black/0 transition-colors duration-500 group-hover:bg-black/25" />
               <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 p-5 md:p-6 bg-gradient-to-t from-black/70 via-black/25 to-transparent text-[var(--cream)] opacity-0 translate-y-2 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0">
-                <div className="text-[10px] uppercase tracking-[0.22em] opacity-80">
-                  {g.tag}
-                </div>
+                <div className="text-[10px] uppercase tracking-[0.22em] opacity-80">{g.tag}</div>
                 <div className="serif text-lg md:text-xl mt-1">{g.title}</div>
               </figcaption>
             </figure>
@@ -85,9 +102,7 @@ export function GraphicDesign() {
                 <div className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
                   {active.tag}
                 </div>
-                <div className="serif text-2xl md:text-3xl mt-2">
-                  {active.title}
-                </div>
+                <div className="serif text-2xl md:text-3xl mt-2">{active.title}</div>
               </div>
             </div>
           )}

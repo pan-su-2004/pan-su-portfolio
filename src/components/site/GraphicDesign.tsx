@@ -22,17 +22,17 @@ const items: Item[] = [
     tag: "Social Media Campaign",
     ratio: "aspect-[2480/3508]",
   }, // portrait A4
-  { img: g2, title: "Fanta", tag: "Social Media Campaign", ratio: "aspect-square" }, // 3000x3000
-  { img: g3, title: "Aquafinat", tag: "Social Media Campaign", ratio: "aspect-square" }, // 1500x1500
+  { img: g2, title: "Crispy Fried Chicken", tag: "Social Media Campaign", ratio: "aspect-square" }, // 3000x3000
+  { img: g3, title: "Fanta", tag: "Social Media Campaign", ratio: "aspect-square" }, // 1500x1500
   {
     img: g4,
-    title: "Crispy Fried Chicken",
+    title: "IELTS Preparation Campaign",
     tag: "Social Media Campaign",
     ratio: "aspect-[3508/2480]",
   }, // landscape
   {
     img: g5,
-    title: "IELTS Preparation Campaign",
+    title: "Aquafinat",
     tag: "Social Media Campaign",
     ratio: "aspect-square",
   }, // 2000x2000

@@ -80,7 +80,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       {
         property: "og:image",
-        content: "/src/assets/pan-su-nadi-profile.jpg",
+        content: "/pan-su-nadi-profile.jpg",
+      },
+      {
+        property: "og:url",
+        content: "https://portfolio-pan-su.vercel.app/",
       },
       { name: "author", content: "Pan Su Nadi" },
       { property: "og:title", content: "Pan Su Nadi — UI/UX & Graphic Designer" },

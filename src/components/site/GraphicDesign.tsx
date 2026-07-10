@@ -32,7 +32,7 @@ const items: Item[] = [
   }, // landscape
   {
     img: g5,
-    title: "Aquafinat",
+    title: "Aquafina",
     tag: "Social Media Campaign",
     ratio: "aspect-square",
   }, // 2000x2000

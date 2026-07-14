@@ -6,6 +6,12 @@ import g3 from "@/assets/graphic-3.jpg";
 import g4 from "@/assets/graphic-4.jpg";
 import g5 from "@/assets/graphic-5.jpg";
 import g6 from "@/assets/graphic-6.jpg";
+import g7 from "@/assets/graphic-7.jpg";
+import g8 from "@/assets/graphic-8.jpg";
+import g9 from "@/assets/graphic-9.jpg";
+import g10 from "@/assets/graphic-10.jpg";
+import g11 from "@/assets/graphic-11.jpg";
+import g12 from "@/assets/graphic-12.jpg";
 
 type Item = {
   img: string;
@@ -41,7 +47,43 @@ const items: Item[] = [
     title: "The Great American Ride",
     tag: "Social Media Campaign",
     ratio: "aspect-[2480/3508]",
-  }, // portrait
+  }, // 2000x2000
+  {
+    img: g7,
+    title: "Japanese Club",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
+  {
+    img: g8,
+    title: "POP Culture Revolution",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
+  {
+    img: g9,
+    title: "Wild Animal",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
+  {
+    img: g10,
+    title: "Hypoglycemia",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
+  {
+    img: g11,
+    title: "Science in Our Daily Life",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
+  {
+    img: g12,
+    title: "Urban Well-being",
+    tag: "Social Media Campaign",
+    ratio: "aspect-square",
+  }, // 2000x2000
 ];
 
 export function GraphicDesign() {
